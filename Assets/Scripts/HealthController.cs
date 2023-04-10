@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
@@ -25,6 +26,22 @@ public class HealthController : MonoBehaviour
             GetComponent<PlayerController>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             playerHealth = -1;
+        }
+        if(playerHealth == -1)
+        {
+            StartCoroutine(ChangerDeSceneAvecDelai());
+        }
+    }
+
+    IEnumerator ChangerDeSceneAvecDelai()
+    {
+        // Attend 2 secondes
+        yield return new WaitForSeconds(5f);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Charge la scène d'index 0
+            SceneManager.LoadScene(0);
         }
     }
 

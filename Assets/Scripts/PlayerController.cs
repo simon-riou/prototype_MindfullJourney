@@ -23,4 +23,12 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(moveH, moveV);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Projectile"))
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
 }

@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edfa49435b190749a55fcbed6d9b5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 3
+  playerHealth: 666
   fadeScreen: {fileID: 0}
   loseText: {fileID: 0}
   hearths:

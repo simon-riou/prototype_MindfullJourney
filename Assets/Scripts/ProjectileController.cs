@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,6 +17,7 @@ public class ProjectileController : MonoBehaviour
 
     public HealthController hc;
 
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -26,8 +29,6 @@ public class ProjectileController : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-
-
     }
 
     private void Update()
@@ -45,8 +46,8 @@ public class ProjectileController : MonoBehaviour
         if (other.collider.CompareTag("Player"))
         {
             hc.playerHealth -= 1;
-            DestroyProjectile();
         }
+        DestroyProjectile();
     }
 
     void DestroyProjectile()

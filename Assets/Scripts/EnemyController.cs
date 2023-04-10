@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
     private float waitTime;
     public float startWaitTime;
 
+    public HealthController hc;
+
     private float timeBtwShots;
     public float startTimeBtwShots;
 
@@ -23,7 +25,9 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        hc = player.GetComponent<HealthController>();
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
 
@@ -32,7 +36,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        if (IsInZone)
+        if (IsInZone && hc.playerHealth > 0)
         {
             if (Vector2.Distance(transform.position, player.position) < aggroDistance && Vector2.Distance(transform.position, player.position) < minDistance)
             {

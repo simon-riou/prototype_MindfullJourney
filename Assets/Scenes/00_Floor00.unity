@@ -268,13 +268,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109968839}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3809, y: 0.2633, z: 0.04029619}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3809004, y: 0.2633, z: 0.04029619}
   m_LocalScale: {x: 0.7783, y: 2.9122965, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1845166819}
-  m_Father: {fileID: 823141954}
+  m_Children: []
+  m_Father: {fileID: 187321565}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &109968841
@@ -290,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
-  doorText: {fileID: 0}
+  doorText: {fileID: 1845166818}
 --- !u!61 &109968842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -665,6 +664,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 249571948}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &187321564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187321565}
+  m_Layer: 0
+  m_Name: disorderMesCouilles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &187321565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187321564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 109968840}
+  m_Father: {fileID: 823141954}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232193155
 GameObject:
@@ -9245,7 +9276,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 109968840}
+  - {fileID: 187321565}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24435,6 +24466,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 921842120}
+  - {fileID: 1845166819}
   - {fileID: 1681384357}
   - {fileID: 1705524812}
   m_Father: {fileID: 0}
@@ -24607,7 +24639,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1523185979}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24721,10 +24753,9 @@ Animation:
   m_GameObject: {fileID: 1681384356}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2d4c284f4f78c4d4ba6fee39940cdb20, type: 2}
+  m_Animation: {fileID: 7400000, guid: dc920a4110a11314b9cbe70a5e9113dc, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: dc920a4110a11314b9cbe70a5e9113dc, type: 2}
-  - {fileID: 7400000, guid: 2d4c284f4f78c4d4ba6fee39940cdb20, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -24795,9 +24826,9 @@ Animation:
   m_GameObject: {fileID: 1705524808}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2d4c284f4f78c4d4ba6fee39940cdb20, type: 2}
+  m_Animation: {fileID: 7400000, guid: dc20a4c2e16689d4aa737b5104a62075, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 2d4c284f4f78c4d4ba6fee39940cdb20, type: 2}
+  - {fileID: 7400000, guid: dc20a4c2e16689d4aa737b5104a62075, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -24913,7 +24944,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1523185979}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25664,16 +25695,16 @@ RectTransform:
   m_GameObject: {fileID: 1845166818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2848517, y: 0.34337163, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 109968840}
-  m_RootOrder: 0
+  m_Father: {fileID: 1523185979}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 476.17502, y: 19.199402}
-  m_SizeDelta: {x: 956.52637, y: 411.8658}
+  m_AnchoredPosition: {x: 11.000061, y: -156.99998}
+  m_SizeDelta: {x: 215.85974, y: -14.134216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1845166820
 Animation:
@@ -25686,7 +25717,6 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 2d4c284f4f78c4d4ba6fee39940cdb20, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: dc920a4110a11314b9cbe70a5e9113dc, type: 2}
   - {fileID: 7400000, guid: 2d4c284f4f78c4d4ba6fee39940cdb20, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
@@ -25712,9 +25742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome in the tpersonality trouble
-
-    room'
+  m_text: "Welcome in the\n personality trouble\r\nroom"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0d652c348e4304f4fa02d78cdd16a34f, type: 2}
   m_sharedMaterial: {fileID: -7177089078513748741, guid: 0d652c348e4304f4fa02d78cdd16a34f,
@@ -25742,8 +25770,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.35
-  m_fontSizeBase: 76.35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

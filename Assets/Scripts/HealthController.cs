@@ -25,6 +25,7 @@ public class HealthController : MonoBehaviour
             FadingOut();
             GetComponent<PlayerController>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             playerHealth = -1;
         }
         if(playerHealth == -1)
